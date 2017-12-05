@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Контакты</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/contacts.css" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/css/font-awesome.min.css">
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCN_BdKnUGw_SGWmcbsMRwg4sT4n154kRo'></script>
+    <script type="text/javascript" src="../js/map.js"></script>
+    <script type="text/javascript" src="../js/jquery.orbit.min.js"></script>
+    <link rel="stylesheet" href="../css/orbit.css">
+    <script src="../js/jquery-1.4.1.min.js"></script>
+    <script src="../js/jquery.orbit.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="fa-ul">
+            <li><span class="fa fa-phone-square"> +375293597998</span></li>
+            <li><span class="fa fa-envelope-open"></span> morozovaleksandr1214@gmail.com</li>
+            <li><span class="fa fa-skype"></span> sv_axel</li>
+        </ul>
+        <div class="logo"><img src="../img/index/logo.png" alt="logo" title="Логотип нашей школы">
+        </div>
+        <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+        <ul class="menu">
+            <label class="btn-menu" for="hmt"><span class="fa fa-bars fa-5x"></span></label>
+            <li><a href="../../index.html" title="Главная страница">Главная</a></li>
+            <li><a href="directions.html" title="Направления">Направления</a></li>
+            <li><a href="schedule.html" title="Расписание">Расписание</a></li>
+            <li><a href="contacts.html" style="background-color: rgba(255, 255, 255, 0.5)">Контакты</a></li>
+        </ul>
+    </nav>
+    <h1><span class="fa fa-map-marker"> </span> Наше местоположение</h1>
+    <p>Республика Беларусь, г. Бобруйск, ул. Крылова, 18</p>
+    <h2>Схема проезда на Google Картах</h2>
+    <div id="gmap_canvas"></div>
+    <div>
+        <h1><span class="fa fa-address-book-o"></span> Контакты</h1>
+        <p>Телефон: +375-44-783-65-74</p>
+        <p>Факс: +375-44-783-65-74</p>
+        <p>Email: <a href="mailto:support@site.ru" target="_blank" >master_shef@gmail.com</a> Ответ на письма приходит в течении 15 минут</p>
+        <h1><span class="fa fa-calendar"></span> Время работы</h1>
+        <p>пн-чт 08:00-17:00, перерыв 12:00-12:40</p>
+        <p>пт 08:00-16:00, перерыв 12:00-12:40</p>
+    </div>
+    <h1>Ищи нас в <span class="fa fa-pulse fa-instagram"></span> Instagram <span class="fa fa-hashtag"> </span> master_chef</h1>
+    <div id="featured">
+        <img src="../img/contacts/1.jpg" alt="Instagram Image" title="Фото наших студентов в Instagram">
+        <img src="../img/contacts/2.jpg" alt="Instagram Image" title="Фото наших студентов в Instagram">
+        <img src="../img/contacts/3.jpg" alt="Instagram Image" title="Фото наших студентов в Instagram">
+        <img src="../img/contacts/4.jpg" alt="Instagram Image" title="Фото наших студентов в Instagram">
+        <img src="../img/contacts/5.jpg" alt="Instagram Image" title="Фото наших студентов в Instagram">
+        <img src="../img/contacts/6.jpg" alt="Instagram Image" title="Фото наших студентов в Instagram">
+        <img src="../img/contacts/7.jpg" alt="Instagram Image" title="Фото наших студентов в Instagram">
+    </div>
+    <h1><span class="fa fa-handshake-o"></span> Спасибо за Ваш интерес!</h1>
+    <footer>
+        <ul>
+            <li><a href="../../index.html" title="Главная страница">Главная</a></li>
+            <li><a href="directions.html" title="Направления">Направления</a></li>
+            <li><a href="schedule.html" title="Расписание">Расписание</a></li>
+            <li><a href="contacts.html" title="Контакты">Контакты</a></li>
+        </ul>
+        <p>Общество с ограниченной ответственностью "АдаптСервис"<br> Наш юридический адрес: 331107, г. Бобруйск, ул. Фабрициуса, д. 18, пом. 167<br> Свидетельство о государственной регистрации выдано Бобруйский горисполкомом за № 492754921</p>
+        <div class="footer-copyright">
+            &#169; 2017
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#featured').orbit({
+                'bullets': true,
+                'timer': true,
+                'animation': 'horizontal-slide'
+            });
+        });
+    </script>
+</body>
+
+</html>

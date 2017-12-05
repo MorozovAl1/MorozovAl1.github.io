@@ -1,0 +1,82 @@
+body {
+    background-color: rgba(245, 245, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 90vw;
+    margin: 3vw auto;
+    font-size: 1.5vw;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+th {
+    border: 1px solid;
+    width: 10vw;
+    height: 5vw;
+}
+
+tr:first-child,
+th:first-child {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+tr:nth-of-type(4)>th:nth-of-type(2n):not(:last-child),
+tr:nth-of-type(11)>th:nth-of-type(2n-1):not(:first-child) {
+    background-color: rgba(255, 20, 20, 0.5);
+    color: white;
+}
+
+tr:nth-of-type(2)>th:nth-of-type(2n):not(:last-child),
+tr:nth-of-type(9)>th:nth-of-type(2n):not(:last-child),
+tr:nth-of-type(5)>th:nth-of-type(2n-1):not(:first-child) {
+    background-color: rgba(20, 255, 20, 0.5);
+
+}
+
+tr:nth-of-type(5)>th:nth-of-type(2n):not(:last-child),
+tr:nth-of-type(12)>th:nth-of-type(2n-1):not(:first-child) {
+    background-color: rgba(0, 30, 230, 1);
+    color: white;
+}
+
+tr:nth-of-type(2)>th:nth-of-type(2n-1):not(:first-child),
+tr:nth-of-type(6)>th:nth-of-type(2n-1):not(:first-child),
+tr:nth-of-type(11)>th:nth-of-type(2n):not(:nth-of-type(2)) {
+    background-color: rgba(20, 5, 200, 0.5);
+
+}
+
+tr:nth-of-type(3)>th:nth-of-type(2n-1):not(:first-child),
+tr:nth-of-type(6)>th:nth-of-type(2n):not(:nth-of-type(2)),
+tr:nth-of-type(12)>th:nth-of-type(2n):not(:nth-of-type(2)) {
+    background-color: rgba(200, 5, 200, 0.3);
+}
+
+tr:nth-of-type(3)>th:nth-of-type(2n):not(:last-child) {
+    background-color: rgba(20, 50, 0, 0.9);
+    color: white;
+}
+
+tr:nth-of-type(4)>th:nth-of-type(2n-1):not(:first-child),
+tr:nth-of-type(13)>th:nth-of-type(2n-1):not(:first-child) {
+    background-color: rgba(255, 200, 0, 0.9);
+}
+
+tr:nth-of-type(10)>th:nth-of-type(2n),
+tr:nth-of-type(13)>th:nth-of-type(2n):not(:nth-of-type(6)) {
+    background-color: rgba(60, 620, 260, 0.5);
+}
+
+@media screen and (max-width: 576px) {
+    nav+h1 {
+        margin-top: 10vw;
+    }
+}
